@@ -1,0 +1,53 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header, footer{
+  display: flex;
+  font-family: fantasy;
+  height:100vh;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation{
+  
+  height: 100vh;
+  position:relative;
+  overflow: hidden;
+}
+
+.satellite{
+  transform: scale(0);
+  height:10vh;
+  position: absolute;
+  left: 0;
+}
+
+
+
+.under{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+
+}
+
+
+
+.paper{
+  position: absolute;
+  height:100vh;
+  perspective: 1000;
+  width:100vw;
+  background-color: transparent;
+  background-image: url('./cupola.png');
+  background-size: cover;
+  
+}
