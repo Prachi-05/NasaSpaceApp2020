@@ -1,5 +1,5 @@
 .bgimg-1{
-    background-image: url("../assets/images/aqua/aqua.jpg");
+    
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -8,17 +8,13 @@
     padding: 0;
     margin: 0;
   }
+.bgimg-aqua{
+  background-image: url("../assets/images/aqua/aqua.jpg");
+}
+.bgimg-aura{
+  background-image: url("../assets/images/aura/aura.jpg");
+}
   
-  #about{
-    background: linear-gradient(0deg, rgba(9,22,42,0.1) 0%, #0C0C0C 100%);
-  }
-  
-  .accolades{
-    padding-bottom: 100px;
-  }
-  .accolades img{
-    width: 100%;
-  }
   /*
    * Bootrap carousel plugin
    * --------------------------------------------------
