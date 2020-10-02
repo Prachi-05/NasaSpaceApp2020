@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 ul,
 li {
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
 }
 a {
     color: inherit;
@@ -250,6 +250,10 @@ header {
     padding: 171px 100px 0 5px;
     margin-top: -82px;
 }
+.content ul{
+    list-style-type: none;
+    font-size: 12px;
+}
 
 .listing_cont.view_type_full_2 .cont .category,
 .listing_cont.view_type_full_2 .cont .category a,
@@ -336,8 +340,8 @@ header {
 .listing_cont.view_type_full_2 .cont .category {
     margin-bottom: 18px;
     padding: 0 40px;
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 35px;
 }
 .listing_cont.view_type_full_2 .cont .category a:hover {
     opacity: 0.5;
