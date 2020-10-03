@@ -146,16 +146,28 @@ aqua.onclick = () => {
 }
 
 aura.onclick = () => {
-    alert("I am aura")
+    loader.classList.add('anim')
+    setTimeout(() => {window.location.href = './includes/aura-about.html'
+    loader.classList.remove('anim')
+
+}, 900)
   
 }
 
 calipso.onclick = () => {
-    alert("I am calipso")
+    loader.classList.add('anim')
+    setTimeout(() => {window.location.href = './includes/calipso-about.html'
+    loader.classList.remove('anim')
+
+}, 900)
 }
 
 cloudsat.onclick = () => {
-    alert("I am cloudsat")
+    loader.classList.add('anim')
+    setTimeout(() => {window.location.href = './includes/cloudsat-about.html'
+    loader.classList.remove('anim')
+
+}, 900)
 }
 
 // Page animations
