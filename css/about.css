@@ -23,6 +23,12 @@
 .bgimg-calipso{
   background-image: url("../assets/images/calipso/calipso.jpg");
 }
+.bgimg-oco2{
+  background-image: url("../assets/images/oco2/oco-2spacecraft-v3.jpg");
+}
+.bgimg-gcomw1{
+  background-image: url("../assets/images/gcomw1/GCOM-W1.jpg");
+}
   
   /*
    * Bootrap carousel plugin
