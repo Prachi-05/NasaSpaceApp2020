@@ -1,4 +1,4 @@
-.bgimg-1{
+.bgimg-1, .bgimg-2, .bgimg-2a, .bgimg-3, .bgimg-4{
     
     height: 500px;
     background-attachment: fixed;
@@ -7,6 +7,23 @@
     background-size: cover;
     padding: 0;
     margin: 0;
+  }
+  .bgimg-2{
+    background-image: url("../assets/images/nsa-earth-science-bloc.jpg");
+  }
+  .bgimg-3{
+    background-image: url("../assets/images/earthfleet-032420.jpg");
+    height: 700px;
+  }
+  .bgimg-4{
+    background-image: url("../assets/images/m17-120-landscape.jpg");
+  }
+  .bgimg-atrain{
+    background-image: url("../assets/images/constellation-A-Train.jpg");
+  }
+  .bgimg-2a{
+    background-image: url("../assets/images/A-Train_C-Train_timeSeps2019_web.jpg");
+    height: 700px;
   }
 .bgimg-aqua{
   background-image: url("../assets/images/aqua/aqua.jpg");
@@ -28,6 +45,9 @@
 }
 .bgimg-gcomw1{
   background-image: url("../assets/images/gcomw1/GCOM-W1.jpg");
+}
+.bgimg-intro{
+  background-image: url("../assets/images/EARTH_CoreTheme.png");
 }
   
   /*
