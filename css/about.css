@@ -14,6 +14,15 @@
 .bgimg-aura{
   background-image: url("../assets/images/aura/aura.jpg");
 }
+.bgimg-cloudsat{
+  background-image: url("../assets/images/cloudsat/cloudsat.jpg");
+}
+.bgimg-parasol{
+  background-image: url("../assets/images/parasol/parasol.jpg");
+}
+.bgimg-calipso{
+  background-image: url("../assets/images/calipso/calipso.jpg");
+}
   
   /*
    * Bootrap carousel plugin
@@ -138,6 +147,9 @@
     color: #E8E8E8;
     text-align:center;
     padding:60px 80px;
+  }
+  #about ul{
+    text-align: left;
   }
   #crew .name, #crew h1{
     font-family: "Freehand-Bold";
