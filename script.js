@@ -56,6 +56,33 @@ const flightPath4= {
     ]
 }
 
+const flightPath5= {
+    curviness: 1.25,
+    autoRotate:false,
+    values: [
+        {x:400,y:-20},
+        {x:window.outerWidth - window.outerWidth/1.2,y:100},
+        // {x:window.outerWidth - 350,y:-20},
+
+        
+        
+
+    ]
+}
+
+const flightPath6= {
+    curviness: 1.25,
+    autoRotate:false,
+    values: [
+        {x:400,y:-20},
+        {x:window.outerWidth - window.outerWidth/1.15,y:-100},
+        // {x:window.outerWidth - 350,y:-20},
+
+        
+        
+
+    ]
+}
 
 
 
@@ -70,9 +97,36 @@ const movePath = {
 
 const tween = new TimelineLite();
 
+
 tween.add(
 
-    TweenLite.to('.paper',1, {
+    TweenLite.to('.issSelector',0.1, {
+        // bezier: flightPath,
+        height:"100vh",
+
+        
+        ease:Power1.easeInOut
+        
+    })
+)
+
+tween.add(
+
+    TweenLite.to('.paleDot',2, {
+        // bezier: flightPath,
+        scale:100,
+        opacity:0,
+
+        
+        ease:Power1.easeInOut
+        
+    })
+)
+
+tween.add(
+
+    TweenLite.to('.paper',3, {
+        delay:10,
         // bezier: flightPath,
         scale:100,
         opacity:0,
@@ -117,6 +171,27 @@ tween.add(
     
 )
 
+tween.add(
+    TweenLite.to('.satellite5',1, {
+        bezier: flightPath5,
+        scale:1.3,
+    }, 0)
+    
+    
+)
+
+tween.add(
+    TweenLite.to('.satellite6',1, {
+        bezier: flightPath6,
+        scale:1.3,
+    }, 0)
+    
+    
+)
+
+
+
+
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
@@ -141,7 +216,7 @@ aqua.onclick = () => {
     setTimeout(() => {window.location.href = './includes/aqua-about.html'
     loader.classList.remove('anim')
 
-}, 900)
+}, 800)
     
 }
 
@@ -150,7 +225,7 @@ aura.onclick = () => {
     setTimeout(() => {window.location.href = './includes/aura-about.html'
     loader.classList.remove('anim')
 
-}, 900)
+}, 800)
   
 }
 
@@ -159,7 +234,7 @@ calipso.onclick = () => {
     setTimeout(() => {window.location.href = './includes/calipso-about.html'
     loader.classList.remove('anim')
 
-}, 900)
+}, 800)
 }
 
 cloudsat.onclick = () => {
@@ -167,7 +242,15 @@ cloudsat.onclick = () => {
     setTimeout(() => {window.location.href = './includes/cloudsat-about.html'
     loader.classList.remove('anim')
 
-}, 900)
+}, 800)
+}
+
+oco.onclick = () => {
+    loader.classList.add('anim')
+    setTimeout(() => {window.location.href = './includes/oco2-about.html'
+    loader.classList.remove('anim')
+
+}, 800)
 }
 
 // Page animations

@@ -29,11 +29,21 @@ header, footer{
   overflow: hidden;
 }
 
-.satellite, .satellite2, .satellite3, .satellite4 {
+.satellite, .satellite2, .satellite3, .satellite4, .satellite5, .satellite6{
   transform: scale(0);
   height:10vh;
   position: absolute;
   left: 0;
+
+}
+
+.satellite:hover, .satellite2:hover, .satellite3:hover, .satellite4:hover, .satellite5:hover, .satellite6:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0.7;
+
+  
 
 }
 
@@ -49,6 +59,58 @@ header, footer{
 
 }
 
+.issSelector{
+  position: absolute;
+  width: 10vw;
+  height: 0vh;
+  left:0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+    transition: all 1s;
+
+
+}
+.issSelector:hover{
+  position: absolute;
+  width: 10vw;
+  height: 100vh;
+  left:0;
+  
+
+  background-image  : linear-gradient(to left,transparent, black);
+  z-index: 10000;
+  transition: all 1s;
+}
+
+.issSelector:hover > .pointer{
+  margin:30px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  border-left-color: aliceblue;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-bottom-color: aliceblue;
+
+  
+}
+
+.text{
+  opacity:0;
+  font-size: 0.18em;
+  text-align: center;
+}
+
+.issSelector:hover > .text{
+  opacity:1;
+  transition: all 0.3s ease-in-out 0s;
+  color:white;
+  font-family: 'Montserrat';
+  font-size:0.2em;
+  width: 80px;
+  text-align: center;
+}
 
 
 .paper{
@@ -62,6 +124,111 @@ header, footer{
   background-size: cover;
   
 }
+
+.paleDot{
+  position: absolute;
+  height:100vh;
+  perspective: 1000;
+  width:100vw;
+  background-color: transparent;
+  background-image: url('https://solarsystem.nasa.gov/internal_resources/4482/');
+  background-position-y: -10em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  
+}
+
+.paleDot-TextWrapper{
+  margin-top: 60%;
+  background-color: rgba(0,0,0,0.9);
+  height:100vh;
+  display: flex;
+  flex:1;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.paleDot-Text{
+  color:white;
+  margin:1em;
+  font-family: 'Montserrat';
+}
+.paleDot-TextHeading{
+  justify-self: center;
+  color:white;
+  margin:1em;
+  font-size: xx-large;
+  font-family: 'Montserrat';
+}
+
+.scrollIndicatorWrapper{
+  width:100vw;
+  height:30vh;  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
+}
+.mouse {
+  display: block;
+  width: 28px;
+  height: 48px;
+  border-radius: 11px 11px 15px 15px;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -13px;
+  z-index: 9999;
+}
+
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 5px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    }
+}
+
+
+#scrollText{
+  color: white;
+}
+
+.scrollIndicator{
+  width: 10px;
+  height:10px;
+  background-color: #121212;
+}
+
 
 .transitionBox{
   position: fixed;

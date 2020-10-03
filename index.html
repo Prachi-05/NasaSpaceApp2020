@@ -10,7 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous"></script>
-
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
  
         
 
@@ -27,13 +27,56 @@
   <section class="animation">
     <div class="paper">
     </div>
+
+    <!-- The Pale blue dot and all things associated with it -->
+    <div class="paleDot">
+      <div class="paleDot-TextWrapper">
+        <div class="paleDot-TextHeading">
+          The Pale Blue Dot
+        </div>
+        <div class="paleDot-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illo atque. Quibusdam culpa, cumque omnis itaque <br>sid doloribus magnam sint quia, necessitatibus sunt ut nam doloremque veritatis placeat provident eveniet!
+        </div>
+
+        <!-- scrollIndicator -->
+        <div class="scrollIndicatorWrapper">
+          <div class="scrollIndicator">
+            <div class="mouse">
+              <span></span>
+            </div>
+
+          
+          </div> 
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ISS Cupola -->
+    
+
+
+    
+
+    <!-- Alll the satellites -->
     <div class="under">
+        <div class="issSelector" id="issSelector">
+          <div class="pointer"></div>
+          <div class="text">
+            <p>Go to the ISS</p>
+          </div>
+        </div>
         <img style="object-fit: contain;" src="https://free4kwallpapers.com/uploads/originals/2016/11/29/edge-of-earth-from-space-4k-wallpaper.jpg">
         
         <img id="aqua" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Aqua_spacecraft_model.png" class="satellite">
         <img id="aura" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aura_spacecraft_model.png/520px-Aura_spacecraft_model.png" class="satellite2">
         <img id="calipso" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/CALIPSO_spacecraft_model.png" class="satellite3">
         <img id="cloudsat" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/CloudSat_spacecraft_model.png" class="satellite4">
+        <img id="oco" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Orbiting_Carbon_Observatory_spacecraft_model.png" class="satellite5">
+        <img id="gcom" src="./assets/images/gcomw1/gcom.png" class="satellite6">
+        
     </div>
   </section>
 
