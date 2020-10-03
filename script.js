@@ -91,7 +91,7 @@ const movePath = {
     curviness:1.25,
     autoRotate:false,
     values: [
-        {x:400,y:-20}
+        {x:0,y:window.outerHeight}
     ]
 }
 
@@ -112,9 +112,9 @@ tween.add(
 
 tween.add(
 
-    TweenLite.to('.paleDot',2, {
-        // bezier: flightPath,
-        scale:100,
+    TweenLite.to('.paleDot',10, {
+        bezier: movePath,
+        // scale:100,
         opacity:0,
 
         
@@ -125,7 +125,23 @@ tween.add(
 
 tween.add(
 
-    TweenLite.to('.paper',3, {
+    TweenLite.to('.issInfoCardWrapper',10, {
+        delay:10,
+        // bezier: flightPath,
+        y:100,
+        opacity:0,
+
+        
+        ease:Power1.easeInOut
+        
+    })
+)
+
+
+
+tween.add(
+
+    TweenLite.to('.paper',10, {
         delay:10,
         // bezier: flightPath,
         scale:100,
