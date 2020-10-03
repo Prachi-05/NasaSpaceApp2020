@@ -138,7 +138,7 @@ let loader = document.getElementById('loader')
 
 aqua.onclick = () => {
     loader.classList.add('anim')
-    setTimeout(() => {window.location.href = './includes/aqua-archive.html'
+    setTimeout(() => {window.location.href = './includes/aqua-about.html'
     loader.classList.remove('anim')
 
 }, 900)
