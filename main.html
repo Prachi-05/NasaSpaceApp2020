@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha512-Ey+nIg+Ue8gUAaCNjR1KHR8nwDjWn9QXoQbynR/X+V66s6u1oqynnuRQ8zSgg5f5gBNb2Bzsu1pItCi3sPkbfA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha512-A98SmLRZISk4eIxQBeCm8k0jAcwN3A3lBx4hr7baoMpV1VpxcxlZIhi5fJIZN50sQ5RlCzx8yV+Voy2cR6x0aA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+ 
+        
+
+  <title>Nasa Spaceapp2020</title>
+</head>
+<body>
+  
+
+  <div class="transitionBox" id="loader">
+
+  </div>
+
+
+  <section class="animation">
+    <div class="paper">
+      <div class="issInfoCardWrapper">
+        <div class="paleDot-TextHeading">
+          The INTERNATIONAL SPACE STATION
+        </div>
+        <div class="paleDot-Text">
+          <p>We have been looking up at the ISS for over 20 years of its service, finally, it is time that the ISS looks down at its home planet. The ISS provides a unique vantage point for observations of Earth and space.</p>
+          <ul>
+            <li>Compared with typical satellites used for Earth observation, the ISS provides better spatial resolution and variable lighting conditions.</li>
+            <li>The ISS can improve disaster response and advance studies of agriculture, water quality, natural resources, the atmosphere, maritime tracking, land use, and much more.</li>
+            <li>The ISS also serves as a technology testbed, a platform for studying elusive particles, and a conduit to resource sustainability and the democratization of imaging data.</li>
+          </ul>
+        </div>
+
+
+        <div class="scrollIndicatorWrapper">
+          
+          <div class="scrollIndicator">
+            <div class="mouse">
+              <span></span>
+            </div>
+
+          
+          </div> 
+
+
+        </div>
+
+      </div>
+      
+      
+    </div>
+
+    <!-- The Pale blue dot and all things associated with it -->
+    <div class="paleDot">
+      <div class="paleDot-TextWrapper">
+        <div class="paleDot-TextHeading">
+          The Pale Blue Dot
+        </div>
+        <div class="paleDot-Text">
+          <p> Thirty years ago, the furthest man-made object from the Earth, Voyager 1, swiveled around and peeked back at the Solar system through its digital eyes. The image it sent back changed our perpsective of the Earth forever. There lay our home, Earth, like a small speck of dust suspended on a sun beam. 
+               It showed us how small and insignificant we are compared to the vast cosmic background. It united humanity like never before. Perhaps no one better than Carl Sagan could have put "The Pale Blue dot" into perpsective. 
+        </div>
+        
+
+        <!-- scrollIndicator -->
+        <div class="scrollIndicatorWrapper">
+          
+          <div class="scrollIndicator">
+            <div class="mouse">
+              <span></span>
+            </div>
+
+          
+          </div> 
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ISS Cupola -->
+    
+
+
+    
+
+    <!-- Alll the satellites -->
+    <div class="under">
+        <div class="issSelector" id="issSelector">
+          <div class="pointer"></div>
+          <div class="text">
+            <p>Go to the ISS</p>
+          </div>
+        </div>
+        <img style="object-fit: contain;" src="https://free4kwallpapers.com/uploads/originals/2016/11/29/edge-of-earth-from-space-4k-wallpaper.jpg">
+        
+        <img id="aqua" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Aqua_spacecraft_model.png" class="satellite">
+        <img id="aura" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aura_spacecraft_model.png/520px-Aura_spacecraft_model.png" class="satellite2">
+        <img id="calipso" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/CALIPSO_spacecraft_model.png" class="satellite3">
+        <img id="cloudsat" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/CloudSat_spacecraft_model.png" class="satellite4">
+        <img id="oco" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Orbiting_Carbon_Observatory_spacecraft_model.png" class="satellite5">
+        <img id="gcom" src="./assets/images/gcomw1/gcom.png" class="satellite6">
+        
+    </div>
+  </section>
+
+
+ 
+
+
+
+</body>
+<script src="script.js">
+   
+</script>
+</html>
