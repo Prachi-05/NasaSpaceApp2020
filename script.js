@@ -148,7 +148,7 @@ tween.add(
 
 
 tween.add(
-    TweenLite.to('.satellite',1, {
+    TweenLite.to('.satellite',40, {
         bezier: flightPath,
         scale:2,
     })
@@ -156,7 +156,7 @@ tween.add(
     
 )
 tween.add(
-    TweenLite.to('.satellite2',1, {
+    TweenLite.to('.satellite2',40, {
         bezier: flightPath2,
         scale:1.3,
     })
@@ -164,7 +164,7 @@ tween.add(
 
 
 tween.add(
-    TweenLite.to('.satellite3',1, {
+    TweenLite.to('.satellite3',40, {
         bezier: flightPath3,
         scale:2,
     }, 0)
@@ -187,7 +187,7 @@ tween.add(
 
 
 tween.add(
-    TweenLite.to('.satellite4',1, {
+    TweenLite.to('.satellite4',40, {
         bezier: flightPath4,
         scale:2,
     }, 0)
@@ -196,7 +196,7 @@ tween.add(
 )
 
 tween.add(
-    TweenLite.to('.satellite5',1, {
+    TweenLite.to('.satellite5',40, {
         bezier: flightPath5,
         scale:1.3,
     }, 0)
@@ -205,7 +205,7 @@ tween.add(
 )
 
 tween.add(
-    TweenLite.to('.satellite6',1, {
+    TweenLite.to('.satellite6',40, {
         bezier: flightPath6,
         scale:1.3,
     }, 0)
@@ -216,7 +216,7 @@ tween.add(
 tween.add(
 
     TweenLite.to('.ATrainWrapper',10, {
-        delay:10,
+        delay:20,
         // bezier: flightPath,
         opacity:0,
 
