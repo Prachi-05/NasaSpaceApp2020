@@ -308,6 +308,14 @@ gcom.onclick = () => {
 }, 1100)
 }
 
+gcom.onclick = () => {
+    loader.classList.add('anim')
+    setTimeout(() => {window.location.href = './includes/gcomw1-about.html'
+    loader.classList.remove('anim')
+
+}, 800)
+}
+
 // Page animations
 
 var x = document.getElementsByClassName('smoothLink')
