@@ -132,7 +132,7 @@ header, footer{
   width:100vw;
   background-color: transparent;
   background-image: url('https://solarsystem.nasa.gov/internal_resources/4482/');
-  background-position-y: -10em;
+  /* background-position-y: -10em; */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -156,11 +156,13 @@ header, footer{
   color:white;
   margin:1em;
   font-family: 'Montserrat';
+  font-size: 12px;
+  padding: 0 50px;
 }
 .paleDot-TextHeading{
   justify-self: center;
   color:white;
-  margin:1em;
+  margin-top:1em;
   font-size: xx-large;
   font-family: 'Montserrat';
 }
