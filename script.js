@@ -98,21 +98,11 @@ const movePath = {
 const tween = new TimelineLite();
 
 
-tween.add(
 
-    TweenLite.to('.issSelector',0.1, {
-        // bezier: flightPath,
-        height:"100vh",
-
-        
-        ease:Power1.easeInOut
-        
-    })
-)
 
 tween.add(
 
-    TweenLite.to('.paleDot',10, {
+    TweenLite.to('.paleDot',90, {
         bezier: movePath,
         // scale:100,
         opacity:0,
@@ -125,7 +115,7 @@ tween.add(
 
 tween.add(
 
-    TweenLite.to('.issInfoCardWrapper',10, {
+    TweenLite.to('.issInfoCardWrapper',20, {
         delay:10,
         // bezier: flightPath,
         y:100,
@@ -141,10 +131,10 @@ tween.add(
 
 tween.add(
 
-    TweenLite.to('.paper',10, {
-        delay:10,
+    TweenLite.to('.paper',80, {
+        delay:5,
         // bezier: flightPath,
-        scale:100,
+        scale:80,
         opacity:0,
 
         
