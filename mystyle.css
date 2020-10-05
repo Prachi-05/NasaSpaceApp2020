@@ -159,7 +159,7 @@ body::-webkit-scrollbar {
   color:white;
   margin:1em;
   font-family: 'Montserrat';
-  font-size: large;
+  font-size: small;
   line-height: 150%;
   padding: 0 50px;
 }
@@ -167,7 +167,7 @@ body::-webkit-scrollbar {
   justify-self: center;
   color:white;
   margin-top:1em;
-  font-size: xx-large;
+  font-size: x-large;
   font-family: 'Montserrat';
 }
 
